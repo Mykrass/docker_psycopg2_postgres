@@ -6,4 +6,4 @@
 !docker ps
 
 # retrieve the ip address of the container, seen from the host
-!docker inspect dq_de_db_1 | grep "IPAddress"
+#!docker inspect dq_de_db_1 | grep "IPAddress"
