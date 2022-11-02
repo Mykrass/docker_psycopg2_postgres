@@ -18,8 +18,8 @@ services:
   pgadmin:
     image: dpage/pgadmin4:latest
     environment:
-      POSTGRES_PASSWORD: 1234 
-      PGADMIN_DEFAULT_EMAIL: mykras@me.com 
+      POSTGRES_PASSWORD: postgres 
+      PGADMIN_DEFAULT_EMAIL: user@domain.com 
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - 8080:80
