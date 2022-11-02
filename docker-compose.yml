@@ -10,7 +10,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
-      - 54320:5432
+      - 5432:5432
     networks:
       db_nw:
         aliases:
@@ -18,8 +18,8 @@ services:
   pgadmin:
     image: dpage/pgadmin4:latest
     environment:
-      POSTGRES_PASSWORD: postgres 
-      PGADMIN_DEFAULT_EMAIL: user@domain.com 
+      POSTGRES_PASSWORD: 1234 
+      PGADMIN_DEFAULT_EMAIL: mykras@me.com 
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - 8080:80
